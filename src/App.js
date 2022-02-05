@@ -8,7 +8,7 @@ const textBody =
 const App = () => {
   return (
     <Fragment>
-      <div className="h-screen w-full bg-mobile-bg sm:bg-desktop-bg bg-repeat-x bg-contain bg-bottom-center">
+      <div className="font-sans h-screen w-full bg-mobile-bg sm:bg-desktop-bg bg-repeat-x bg-contain bg-bottom-center">
         <Card
           cardTitle="Order Summary"
           cardBody={textBody}

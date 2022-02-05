@@ -1,10 +1,16 @@
 import React from "react";
+import Button from "../Button/Button";
 
-const PaymentPlanItem = ({ text, onClick }) => {
+const PaymentPlanItem = ({ planIcon, planType, planPrice }) => {
   return (
-    <button aria-label={text} type="button" className="" onClick={onClick}>
-      {text}
-    </button>
+    <div className="flex bg-gray-100 justify-around items-center p-2">
+      <div>{planIcon}</div>
+      <div className="block">
+        <div>{planType}</div>
+        <div>{planPrice}</div>
+      </div>
+      <Button className="!bg-none" text="Change" />
+    </div>
   );
 };
 
