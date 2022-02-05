@@ -7,6 +7,12 @@ module.exports = {
       "desktop-bg":
         "url('../public/assets/images/pattern-background-desktop.svg')",
     },
+    minHeight: {
+      "3/4": "75%",
+    },
+    maxWidth: {
+      400: "400px",
+    },
     extend: {},
   },
   plugins: [],
