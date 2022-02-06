@@ -1,11 +1,12 @@
 import React from "react";
+import classnames from "tailwindcss-classnames";
 
-const Button = ({ text, onClick }) => {
+const Button = ({ text, onClick, ariaLabel, className }) => {
   return (
     <button
-      aria-label={text}
+      aria-label={ariaLabel ? ariaLabel : text}
       type="button"
-      className="bg-indigo-800 self-center text-white px-4 py-2 text-sm rounded-full"
+      className={classnames("self-center px-4 py-2 text-sm", className)}
       onClick={onClick}
     >
       {text}
